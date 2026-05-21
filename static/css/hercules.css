@@ -1,0 +1,52 @@
+/* HERCULES site additions (kept separate from index.css per project convention). */
+
+.publication-venue {
+  display: inline-block;
+  margin: 0.5rem auto 1rem;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  background: #b87333;
+  border-radius: 999px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+
+.env-grid {
+  margin-top: 1rem;
+}
+
+.env-image,
+.sensors-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.env-caption,
+.sensors-caption {
+  margin-top: 0.5rem;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 600;
+}
+
+.results-carousel .item .carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sensors-grid {
+  margin-top: 1rem;
+}

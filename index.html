@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="HERCULES: an open-source Unreal Engine 5 simulator for heterogeneous UAV–UGV teams, supporting collaborative SLAM, cooperative perception, and large-scale exploration in photorealistic, dynamic environments.">
+  <meta name="keywords" content="HERCULES, multi-robot simulation, heterogeneous robotics, UAV, UGV, collaborative SLAM, cooperative perception, Unreal Engine 5, AirSim, Cosys-AirSim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration</title>
+
+  <meta property="og:title" content="HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration">
+  <meta property="og:description" content="An open-source Unreal Engine 5 simulator for heterogeneous UAV–UGV teams in photorealistic, dynamic, large-scale environments.">
+  <!-- TODO: replace og:image with a hosted absolute URL once the site is deployed -->
+  <meta property="og:image" content="./static/images/system_overview.png">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/hercules.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/lunarlab-gatech/HERCULES">
+        <span class="icon"><i class="fab fa-github"></i></span>
+        <span>Code</span>
+      </a>
+      <!-- TODO: confirm LunarLab URL resolves -->
+      <a class="navbar-item" href="https://sites.gatech.edu/lunarlab/">
+        <span class="icon"><i class="fas fa-flask"></i></span>
+        <span>LunarLab</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+            <span class="hercules">HERCULES</span>: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration
+          </h1>
+
+          <p class="publication-venue">Under Review · International Journal of Robotics Research (IJRR), 2025</p>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Sandilya Sai Garimella</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Daniel Chase Butterfield</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Sean Wilson</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Lu Gan</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Georgia Institute of Technology,</span>
+            <span class="author-block"><sup>2</sup>Georgia Tech Research Institute</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Paper Link. TODO: replace href once PDF is published. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arXiv Link. TODO: replace href once arXiv ID is assigned. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/lunarlab-gatech/HERCULES"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Video Link. TODO: replace href once demo reel is uploaded. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero media: static system overview for now. TODO: hero video (replace <img> with autoplay/muted/loop <video>) -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/system_overview.png"
+           alt="System overview of HERCULES."
+           class="hero-image">
+      <h2 class="subtitle has-text-centered">
+        An open-source Unreal Engine 5 simulator for heterogeneous UAV–UGV teams in photorealistic, dynamic, large-scale environments.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present <span class="hercules">HERCULES</span>, a simulation platform for heterogeneous multi-robot autonomy that enables unmanned ground vehicles (UGVs) and unmanned aerial vehicles (UAVs) to collaboratively explore and understand large-scale, complex environments. Built as an advanced fork of AirSim on Unreal Engine 5 (UE5), <span class="hercules">HERCULES</span> provides a unified autonomy pipeline supporting concurrent UAV–UGV operation, high-fidelity sensing, and large-scale environmental interaction, including offline trajectory generation, kinodynamically feasible motion for both platforms, and complementary coverage and leader–follower trajectory patterns for dataset collection.
+          </p>
+          <p>
+            A novel autonomous waypoint-tracking UGV controller mirrors UAV interfaces, enabling unified high-level research in exploration and multi-robot coordination. To demonstrate the simulator's utility as a benchmark sandbox, we evaluate state-of-the-art baselines in collaborative SLAM (ROMAN) and collaborative perception (multi-view 3D object detection baselines from DAIR-V2X). Optimized ROS 2 wrappers and lightweight APIs allow seamless development of SLAM, perception, and learning-based algorithms directly on top of this infrastructure.
+          </p>
+          <p>
+            Three representative environments—desert, forest, and city—along with the option to import georeferenced real-world environments, enable testing algorithms under sparse landmarks, perceptual aliasing, and dynamic obstacles. In addition to the standard AirSim and Cosys-AirSim sensor suite, <span class="hercules">HERCULES</span> extends thermal and low-light sensing with a physics-based long-wave infrared (LWIR) camera and a configurable night-vision mode. Advanced UE5 assets such as realistic agents, traffic, wildlife, and dynamic environmental phenomena—including fire, flooding, and crop disease spread—are exposed through plug-and-play interfaces for procedural scenario generation. Our open-source code and datasets provide a versatile testbed for advancing heterogeneous multi-robot SLAM, perception, planning, and exploration.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Environments</h2>
+    <p class="has-text-centered content">
+      <span class="hercules">HERCULES</span> ships with three photorealistic worlds—desert, forest, and city—each engineered to stress a different class of perception and planning failure: sparse landmarks and long-range visibility (desert), perceptual aliasing from repetitive geometry (forest), and dense occlusions with dynamic agents (city). Georeferenced real-world scenes can be imported via Cesium for Unreal.
+    </p>
+    <div class="columns is-centered env-grid">
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/env_desert.png" alt="Desert environment (Australian Outback)." class="env-image">
+        <p class="env-caption">Desert</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/env_forest.png" alt="Forest environment." class="env-image">
+        <p class="env-caption">Forest</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/env_city.png" alt="City / urban environment." class="env-image">
+        <p class="env-caption">City</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overview</h2>
+    <div class="content has-text-justified">
+      <ul>
+        <li>
+          <strong>Integrated heterogeneous autonomy stack.</strong>
+          We re-architect the AirSim/Cosys-AirSim SimMode layer to enable concurrent UAV–UGV operation within a single simulation session, resolving a fundamental physics-engine conflict that previously restricted each session to a single vehicle type. On top of this, a unified waypoint-level command interface, an autonomous UGV controller, an end-to-end planning pipeline, and coordinated multi-robot sensor logging make large-scale outdoor heterogeneous experiments practical.
+        </li>
+        <li>
+          <strong>New sensor modalities and dynamic environments.</strong>
+          Two new sensors not present in Cosys-AirSim: an LWIR thermal camera based on Planck-law spectral radiance, and a night-vision camera with empirical photometric transfer. Parameterized dynamic-environment modules (wildfire spread, flood inundation, crop disease transmission) and dynamic-agent Blueprints (MetaHuman pedestrians, VehicleAI traffic, AnimalAI wildlife) update the shared world state at runtime.
+        </li>
+        <li>
+          <strong>Open benchmarks and reproducible release.</strong>
+          Ready-to-run evaluation suites for collaborative SLAM (ROMAN) and multi-view 3D object detection (DAIR-V2X-style baselines), a dataset collection pipeline that exports synchronized multimodal data in standard formats (KITTI-style layouts, ROS 2 bags), and performance-optimized ROS 2 wrappers for direct integration with existing autonomy stacks.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered" style="margin-bottom: 1.5rem;">Collaborative SLAM: Representative Camera Views</h2>
+      <p class="has-text-centered content" style="margin-bottom: 1.5rem;">
+        Synchronized UAV (drone) and UGV (Husky) viewpoints captured during collaborative SLAM trajectories across the desert, forest, and city worlds.
+      </p>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="./static/images/cslam_C_Drone1_550_55.png" alt="UAV view, City sequence (t=550.55s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_C_Husky1_0_05.png" alt="UGV view, City sequence (t=0.05s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_C_Husky1_149_15.png" alt="UGV view, City sequence (t=149.15s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_C_Husky1_182_90.png" alt="UGV view, City sequence (t=182.90s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_C_Husky1_242_70.png" alt="UGV view, City sequence (t=242.70s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_AP_Drone1_599_00.png" alt="UAV view, desert (AP) sequence (t=599.00s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_AP_Husky1_235_40.png" alt="UGV view, desert (AP) sequence (t=235.40s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_AC_Drone1_604_50.png" alt="UAV view, desert→city (AC) sequence (t=604.50s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_AC_Husky1_442_50.png" alt="UGV view, desert→city (AC) sequence (t=442.50s)." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_Drone1_forest.png" alt="UAV view, forest sequence." class="carousel-image">
+        </div>
+        <div class="item">
+          <img src="./static/images/cslam_Husky1_forest.png" alt="UGV view, forest sequence." class="carousel-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Sensors &amp; Phenomena</h2>
+    <p class="has-text-centered content">
+      Beyond the inherited Cosys-AirSim sensor suite, <span class="hercules">HERCULES</span> adds physics-based long-wave infrared (LWIR) and night-vision (NVG) cameras, and three classes of dynamic environmental phenomena that update the shared world state at runtime.
+    </p>
+    <div class="columns is-multiline sensors-grid">
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/nvg.png" alt="Night-vision (NVG) rendering, desert scene." class="sensors-image">
+        <p class="sensors-caption">Night-vision (NVG)</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/lwir.png" alt="LWIR thermal rendering, kangaroos near fire." class="sensors-image">
+        <p class="sensors-caption">LWIR thermal</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/phenom_wildfire.png" alt="Wildfire spread, desert environment." class="sensors-image">
+        <p class="sensors-caption">Wildfire spread</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/phenom_flood.png" alt="Flood inundation, Atlanta georegistered scene." class="sensors-image">
+        <p class="sensors-caption">Flood inundation</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <img src="./static/images/phenom_cropdisease.png" alt="Crop disease transmission across agricultural terrain." class="sensors-image">
+        <p class="sensors-caption">Crop disease</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TODO: update citation once accepted/published (replace 'Under review' with volume/number/pages and update year if needed) -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{garimella2025hercules,
+  title={HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration},
+  author={Garimella, Sandilya Sai and Butterfield, Daniel Chase and Wilson, Sean and Gan, Lu},
+  journal={International Journal of Robotics Research},
+  year={2025},
+  note={Under review}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/lunarlab-gatech/HERCULES">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            &copy; 2025 LunarLab, Georgia Institute of Technology.
+          </p>
+          <p>
+            This page is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page template, licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
