@@ -172,18 +172,54 @@
     <p class="has-text-centered content">
       <span class="hercules">HERCULES</span> ships with three photorealistic worlds—desert, forest, and city—each engineered to stress a different class of perception and planning failure: sparse landmarks and long-range visibility (desert), perceptual aliasing from repetitive geometry (forest), and dense occlusions with dynamic agents (city). Georeferenced real-world scenes can be imported via Cesium for Unreal.
     </p>
-    <div class="columns is-centered env-grid">
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/env_desert.png" alt="Desert environment (Australian Outback)." class="env-image">
-        <p class="env-caption">Desert</p>
-      </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/env_forest.png" alt="Forest environment." class="env-image">
-        <p class="env-caption">Forest</p>
-      </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/env_city.png" alt="City / urban environment." class="env-image">
-        <p class="env-caption">City</p>
+    <div class="vgroup">
+      <div class="vgrid vgrid--wide">
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/auskangaroo1.jpg">
+              <source data-src="./static/videos/auskangaroo1.webm" type="video/webm">
+              <source data-src="./static/videos/auskangaroo1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Australian Outback</span>
+            <span class="vpanel-desc">Australian outback world with kangaroo wildlife.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/forestdeer1.jpg">
+              <source data-src="./static/videos/forestdeer1.webm" type="video/webm">
+              <source data-src="./static/videos/forestdeer1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Forest</span>
+            <span class="vpanel-desc">Forest world with deer wildlife.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/citycarspeds1.jpg">
+              <source data-src="./static/videos/citycarspeds1.webm" type="video/webm">
+              <source data-src="./static/videos/citycarspeds1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">City</span>
+            <span class="vpanel-desc">Urban city world with vehicle traffic.</span>
+          </figcaption>
+        </figure>
+
       </div>
     </div>
   </div>
@@ -213,48 +249,245 @@
 </section>
 
 
-<section class="hero is-light is-small">
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3 has-text-centered">Multimodal Dataset</h2>
+    <p class="has-text-centered content">
+      <span class="hercules">HERCULES</span> exports time-synchronized multimodal data for heterogeneous robot teams. Each dashboard shows, per robot, the <strong>RGB</strong>, <strong>depth</strong>, <strong>semantic segmentation</strong>, and <strong>LiDAR</strong> streams captured along a coverage or leader–follower trajectory in one of our environments.
+    </p>
+    <div class="vgroup">
+      <div class="vgrid vgrid--full">
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/City_Block.jpg">
+              <source data-src="./static/videos/City_Block.webm" type="video/webm">
+              <source data-src="./static/videos/City_Block.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">City Block</span>
+            <span class="vpanel-desc">Urban City Block sequence — RGB, depth, semantic segmentation, and LiDAR for every robot in the UAV–UGV team.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/Australia_Center.jpg">
+              <source data-src="./static/videos/Australia_Center.webm" type="video/webm">
+              <source data-src="./static/videos/Australia_Center.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Australia — Center Coverage</span>
+            <span class="vpanel-desc">Australian outback, center-coverage trajectory — RGB, depth, semantic, and LiDAR streams across the team.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/Australia_Perimeter.jpg">
+              <source data-src="./static/videos/Australia_Perimeter.webm" type="video/webm">
+              <source data-src="./static/videos/Australia_Perimeter.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Australia — Perimeter Coverage</span>
+            <span class="vpanel-desc">Australian outback, perimeter-coverage trajectory — RGB, depth, semantic, and LiDAR streams across the team.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/Forest.jpg">
+              <source data-src="./static/videos/Forest.webm" type="video/webm">
+              <source data-src="./static/videos/Forest.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Forest</span>
+            <span class="vpanel-desc">Forest sequence — RGB, depth, semantic segmentation, and LiDAR for every robot in the team.</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered" style="margin-bottom: 1.5rem;">Collaborative SLAM: Representative Camera Views</h2>
-      <p class="has-text-centered content" style="margin-bottom: 1.5rem;">
-        Synchronized UAV (drone) and UGV (Husky) viewpoints captured during collaborative SLAM trajectories across the desert, forest, and city worlds.
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Collaborative SLAM</h2>
+      <p class="has-text-centered content">
+        We benchmark <a href="https://github.com/mit-acl/ROMAN">ROMAN</a> collaborative SLAM on a <em>City Block</em> sequence with two UAVs and two UGVs. Each robot runs LIO-SAM odometry with an open-set ROMAN object map; inter-robot loop closures are registered pairwise via CLIPPER.
       </p>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="./static/images/cslam_C_Drone1_550_55.png" alt="UAV view, City sequence (t=550.55s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_C_Husky1_0_05.png" alt="UGV view, City sequence (t=0.05s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_C_Husky1_149_15.png" alt="UGV view, City sequence (t=149.15s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_C_Husky1_182_90.png" alt="UGV view, City sequence (t=182.90s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_C_Husky1_242_70.png" alt="UGV view, City sequence (t=242.70s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_AP_Drone1_599_00.png" alt="UAV view, desert (AP) sequence (t=599.00s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_AP_Husky1_235_40.png" alt="UGV view, desert (AP) sequence (t=235.40s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_AC_Drone1_604_50.png" alt="UAV view, desert→city (AC) sequence (t=604.50s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_AC_Husky1_442_50.png" alt="UGV view, desert→city (AC) sequence (t=442.50s)." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_Drone1_forest.png" alt="UAV view, forest sequence." class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/cslam_Husky1_forest.png" alt="UGV view, forest sequence." class="carousel-image">
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Live Mapping</h3>
+        <div class="vgrid vgrid--2x2">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Drone1-LiveMapping.jpg">
+                <source data-src="./static/videos/V2.4.C-Drone1-LiveMapping.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Drone1-LiveMapping.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UAV 1 — Live Mapping</span>
+              <span class="vpanel-desc">Drone 1 live trajectory, camera pose, and object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Drone2-LiveMapping.jpg">
+                <source data-src="./static/videos/V2.4.C-Drone2-LiveMapping.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Drone2-LiveMapping.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UAV 2 — Live Mapping</span>
+              <span class="vpanel-desc">Drone 2 live trajectory, camera pose, and object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Husky1-LiveMapping.jpg">
+                <source data-src="./static/videos/V2.4.C-Husky1-LiveMapping.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Husky1-LiveMapping.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UGV 1 — Live Mapping</span>
+              <span class="vpanel-desc">Husky 1 live trajectory, camera pose, and object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Husky2-LiveMapping.jpg">
+                <source data-src="./static/videos/V2.4.C-Husky2-LiveMapping.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Husky2-LiveMapping.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UGV 2 — Live Mapping</span>
+              <span class="vpanel-desc">Husky 2 live trajectory, camera pose, and object map (City Block).</span>
+            </figcaption>
+          </figure>
+
         </div>
       </div>
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Final Map</h3>
+        <div class="vgrid vgrid--2x2">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Drone1-FinalMapViz.jpg">
+                <source data-src="./static/videos/V2.4.C-Drone1-FinalMapViz.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Drone1-FinalMapViz.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UAV 1 — Final Map</span>
+              <span class="vpanel-desc">Drone 1 LIO-SAM final map with ROMAN object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Drone2-FinalMapViz.jpg">
+                <source data-src="./static/videos/V2.4.C-Drone2-FinalMapViz.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Drone2-FinalMapViz.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UAV 2 — Final Map</span>
+              <span class="vpanel-desc">Drone 2 LIO-SAM final map with ROMAN object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Husky1-FinalMapViz.jpg">
+                <source data-src="./static/videos/V2.4.C-Husky1-FinalMapViz.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Husky1-FinalMapViz.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UGV 1 — Final Map</span>
+              <span class="vpanel-desc">Husky 1 LIO-SAM final map with ROMAN object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Husky2-FinalMapViz.jpg">
+                <source data-src="./static/videos/V2.4.C-Husky2-FinalMapViz.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Husky2-FinalMapViz.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">UGV 2 — Final Map</span>
+              <span class="vpanel-desc">Husky 2 LIO-SAM final map with ROMAN object map (City Block).</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Loop-Closure Alignment</h3>
+        <div class="vgrid vgrid--single">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" loop muted playsinline preload="none"
+                     poster="./static/videos/posters/V2.4.C-Husky1Husky2-Alignment.jpg">
+                <source data-src="./static/videos/V2.4.C-Husky1Husky2-Alignment.webm" type="video/webm">
+                <source data-src="./static/videos/V2.4.C-Husky1Husky2-Alignment.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Loop-Closure Alignment</span>
+              <span class="vpanel-desc">ROMAN loop-closure: UGV1 and UGV2 submaps aligned pairwise (CLIPPER).</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -266,26 +499,80 @@
     <p class="has-text-centered content">
       Beyond the inherited Cosys-AirSim sensor suite, <span class="hercules">HERCULES</span> adds physics-based long-wave infrared (LWIR) and night-vision (NVG) cameras, and three classes of dynamic environmental phenomena that update the shared world state at runtime.
     </p>
-    <div class="columns is-multiline sensors-grid">
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/nvg.png" alt="Night-vision (NVG) rendering, desert scene." class="sensors-image">
-        <p class="sensors-caption">Night-vision (NVG)</p>
+    <div class="vgroup">
+      <h3 class="vgroup-title">New Sensor Modalities</h3>
+      <div class="columns is-centered sensors-grid">
+        <div class="column is-one-third has-text-centered">
+          <img src="./static/images/nvg.png" alt="Night-vision (NVG) rendering, desert scene." class="sensors-image">
+          <p class="sensors-caption">Night-vision (NVG)</p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <img src="./static/images/lwir.png" alt="LWIR thermal rendering, kangaroos near fire." class="sensors-image">
+          <p class="sensors-caption">LWIR thermal</p>
+        </div>
       </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/lwir.png" alt="LWIR thermal rendering, kangaroos near fire." class="sensors-image">
-        <p class="sensors-caption">LWIR thermal</p>
-      </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/phenom_wildfire.png" alt="Wildfire spread, desert environment." class="sensors-image">
-        <p class="sensors-caption">Wildfire spread</p>
-      </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/phenom_flood.png" alt="Flood inundation, Atlanta georegistered scene." class="sensors-image">
-        <p class="sensors-caption">Flood inundation</p>
-      </div>
-      <div class="column is-one-third has-text-centered">
-        <img src="./static/images/phenom_cropdisease.png" alt="Crop disease transmission across agricultural terrain." class="sensors-image">
-        <p class="sensors-caption">Crop disease</p>
+    </div>
+
+    <div class="vgroup">
+      <h3 class="vgroup-title">Dynamic Environmental Phenomena</h3>
+      <div class="vgrid vgrid--mixed">
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/forestfire1.jpg">
+              <source data-src="./static/videos/forestfire1.webm" type="video/webm">
+              <source data-src="./static/videos/forestfire1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Wildfire Spread</span>
+            <span class="vpanel-desc">Simulated wildfire propagating through a forest environment.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/Atlanta_hercules_flooding_demo1.jpg">
+              <source data-src="./static/videos/Atlanta_hercules_flooding_demo1.webm" type="video/webm">
+              <source data-src="./static/videos/Atlanta_hercules_flooding_demo1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Atlanta Flood</span>
+            <span class="vpanel-desc">Flood inundation over a Cesium 3D model of Atlanta.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/jungleenv_flooding_1.jpg">
+              <source data-src="./static/videos/jungleenv_flooding_1.webm" type="video/webm">
+              <source data-src="./static/videos/jungleenv_flooding_1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Jungle Flood</span>
+            <span class="vpanel-desc">Flood inundation in a dense jungle environment.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <img class="vpanel-video" src="./static/images/phenom_cropdisease.png"
+                 alt="Crop disease transmission across agricultural terrain.">
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">Crop Disease</span>
+            <span class="vpanel-desc">Crop disease transmission across agricultural terrain (still).</span>
+          </figcaption>
+        </figure>
+
       </div>
     </div>
   </div>
@@ -328,6 +615,8 @@
     </div>
   </div>
 </footer>
+
+<script src="./static/js/videos.js"></script>
 
 </body>
 </html>

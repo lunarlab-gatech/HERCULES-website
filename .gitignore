@@ -1,2 +1,8 @@
 .DS_store
 .idea
+static/videos/*.log
+static/videos/.pl*
+static/videos/ffmpeg2pass*
+
+# Local video build tooling (not part of the published site)
+transcode_*.sh
