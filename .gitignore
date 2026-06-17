@@ -6,3 +6,6 @@ static/videos/ffmpeg2pass*
 
 # Local video build tooling (not part of the published site)
 transcode_*.sh
+
+# Local full-res backup of the system overview figure (web uses the optimized one)
+static/images/system_overview_full.png
