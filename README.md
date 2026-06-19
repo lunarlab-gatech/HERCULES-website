@@ -13,10 +13,9 @@ Then open <http://localhost:8000>.
 ## Citation
 
 ```bibtex
-@inproceedings{garimella2026hercules,
+@misc{garimella2026hercules,
   title={HERCULES: An Open-Source Simulation Framework for Heterogeneous Multi-Robot SLAM, Collaborative Perception, and Exploration},
   author={Garimella, Sandilya Sai and Butterfield, Daniel Chase and Wilson, Sean and Gan, Lu},
-  booktitle={CVPR 2026 Workshop on Multi-Agent Robot Systems (MARS)},
   year={2026}
 }
 ```
