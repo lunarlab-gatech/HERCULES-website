@@ -165,13 +165,14 @@
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <h2 class="title is-3 has-text-centered">Environments</h2>
     <p class="has-text-centered content">
       <span class="hercules">HERCULES</span> ships with three photorealistic worlds—desert, forest, and city—each engineered to stress a different class of perception and planning failure: sparse landmarks and long-range visibility (desert), perceptual aliasing from repetitive geometry (forest), and dense occlusions with dynamic agents (city). Georeferenced real-world scenes can be imported via Cesium for Unreal.
     </p>
     <div class="vgroup">
-      <div class="vgrid vgrid--wide">
+      <h3 class="vgroup-title">Australian Outback</h3>
+      <div class="vgrid vgrid--pairs">
 
         <figure class="vpanel">
           <div class="vpanel-media">
@@ -183,10 +184,32 @@
             <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
           </div>
           <figcaption class="vpanel-cap">
-            <span class="vpanel-title">Australian Outback</span>
-            <span class="vpanel-desc">Australian outback world with kangaroo wildlife.</span>
+            <span class="vpanel-title">Wildlife</span>
+            <span class="vpanel-desc">Kangaroo wildlife roaming the outback world.</span>
           </figcaption>
         </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/auskang_uavugv1.jpg">
+              <source data-src="./static/videos/auskang_uavugv1.webm" type="video/webm">
+              <source data-src="./static/videos/auskang_uavugv1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">UAV + UGV</span>
+            <span class="vpanel-desc">Heterogeneous robot team traversing the outback.</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+    <div class="vgroup">
+      <h3 class="vgroup-title">Forest</h3>
+      <div class="vgrid vgrid--pairs">
 
         <figure class="vpanel">
           <div class="vpanel-media">
@@ -198,10 +221,32 @@
             <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
           </div>
           <figcaption class="vpanel-cap">
-            <span class="vpanel-title">Forest</span>
-            <span class="vpanel-desc">Forest world with deer wildlife.</span>
+            <span class="vpanel-title">Wildlife</span>
+            <span class="vpanel-desc">Deer wildlife in the forest world.</span>
           </figcaption>
         </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/forestdeer_uavugv1.jpg">
+              <source data-src="./static/videos/forestdeer_uavugv1.webm" type="video/webm">
+              <source data-src="./static/videos/forestdeer_uavugv1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">UAV + UGV</span>
+            <span class="vpanel-desc">Heterogeneous robot team traversing the forest.</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+    <div class="vgroup">
+      <h3 class="vgroup-title">City</h3>
+      <div class="vgrid vgrid--pairs">
 
         <figure class="vpanel">
           <div class="vpanel-media">
@@ -213,8 +258,23 @@
             <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
           </div>
           <figcaption class="vpanel-cap">
-            <span class="vpanel-title">City</span>
-            <span class="vpanel-desc">Urban city world with vehicle traffic.</span>
+            <span class="vpanel-title">Traffic</span>
+            <span class="vpanel-desc">Vehicle traffic through the urban city world.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="vpanel">
+          <div class="vpanel-media">
+            <video class="vpanel-video" loop muted playsinline preload="none"
+                   poster="./static/videos/posters/city_uavugv1.jpg">
+              <source data-src="./static/videos/city_uavugv1.webm" type="video/webm">
+              <source data-src="./static/videos/city_uavugv1.mp4" type="video/mp4">
+            </video>
+            <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+          <figcaption class="vpanel-cap">
+            <span class="vpanel-title">UAV + UGV</span>
+            <span class="vpanel-desc">Heterogeneous robot team traversing the city.</span>
           </figcaption>
         </figure>
 
