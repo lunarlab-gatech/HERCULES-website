@@ -265,3 +265,19 @@
   color: #666;
   line-height: 1.35;
 }
+
+/* ------------------------------------------------------------------ */
+/* Visitor map (MapMyVisitors embed)                                  */
+/* ------------------------------------------------------------------ */
+.visitor-map-embed {
+  display: inline-block;
+  width: 100%;
+  max-width: 480px;
+  margin: 1rem auto 0;
+}
+
+.visitor-map-embed img,
+.visitor-map-embed canvas {
+  max-width: 100%;
+  height: auto;
+}
