@@ -681,8 +681,9 @@
       <h2 class="title is-3 has-text-centered">Collaborative Perception</h2>
       <p class="has-text-centered content">
         <span class="hercules">HERCULES</span> supports V2X-style collaborative perception, where a
-        <strong>vehicle-side</strong> agent and a roadside <strong>infrastructure-side</strong> agent
-        observe a shared city intersection from complementary viewpoints. Each agent exports
+        <strong>vehicle-side</strong> agent &mdash; a UGV traversing the sidewalk &mdash; and an
+        <strong>infrastructure-side</strong> agent &mdash; an overhead UAV looking down on the scene
+        &mdash; observe a shared city intersection from complementary viewpoints. Each agent exports
         time-synchronized <strong>RGB</strong> and <strong>LiDAR</strong> streams, providing the
         overlapping multi-view coverage that cooperative detection and fusion methods rely on.
       </p>
@@ -702,7 +703,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Vehicle-Side &amp; Infrastructure-Side RGB</span>
-              <span class="vpanel-desc">Time-synchronized RGB of a shared city intersection: the vehicle-side camera (left) and the roadside infrastructure camera (right), with a UAV visible overhead.</span>
+              <span class="vpanel-desc">Time-synchronized RGB of a shared city intersection from the vehicle-side UGV on the sidewalk (left) and the infrastructure-side UAV overhead (right).</span>
             </figcaption>
           </figure>
 
@@ -724,7 +725,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Vehicle-Side LiDAR</span>
-              <span class="vpanel-desc">LiDAR point cloud from the vehicle-side agent's sensor.</span>
+              <span class="vpanel-desc">LiDAR point cloud from the vehicle-side UGV traversing the sidewalk.</span>
             </figcaption>
           </figure>
 
@@ -739,7 +740,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Infrastructure-Side LiDAR</span>
-              <span class="vpanel-desc">LiDAR point cloud from the roadside infrastructure agent's sensor.</span>
+              <span class="vpanel-desc">LiDAR point cloud from the infrastructure-side UAV flying overhead.</span>
             </figcaption>
           </figure>
 
@@ -757,7 +758,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Vehicle-Side RGB</span>
-              <span class="vpanel-desc">Vehicle-side RGB camera sampled across the sequence.</span>
+              <span class="vpanel-desc">Vehicle-side UGV's RGB camera sampled across the sequence.</span>
             </figcaption>
           </figure>
 
@@ -768,7 +769,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Vehicle-Side LiDAR</span>
-              <span class="vpanel-desc">Vehicle-side LiDAR scans sampled across the sequence.</span>
+              <span class="vpanel-desc">Vehicle-side UGV's LiDAR sampled across the sequence.</span>
             </figcaption>
           </figure>
 
@@ -779,7 +780,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Infrastructure-Side RGB</span>
-              <span class="vpanel-desc">Infrastructure-side RGB camera sampled across the sequence.</span>
+              <span class="vpanel-desc">Infrastructure-side UAV's RGB camera sampled across the sequence.</span>
             </figcaption>
           </figure>
 
@@ -790,7 +791,7 @@
             </div>
             <figcaption class="vpanel-cap">
               <span class="vpanel-title">Infrastructure-Side LiDAR</span>
-              <span class="vpanel-desc">Infrastructure-side LiDAR scans sampled across the sequence.</span>
+              <span class="vpanel-desc">Infrastructure-side UAV's LiDAR sampled across the sequence.</span>
             </figcaption>
           </figure>
 
