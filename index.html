@@ -675,6 +675,133 @@
 </section>
 
 
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Collaborative Perception</h2>
+      <p class="has-text-centered content">
+        <span class="hercules">HERCULES</span> supports V2X-style collaborative perception, where a
+        <strong>vehicle-side</strong> agent and a roadside <strong>infrastructure-side</strong> agent
+        observe a shared city intersection from complementary viewpoints. Each agent exports
+        time-synchronized <strong>RGB</strong> and <strong>LiDAR</strong> streams, providing the
+        overlapping multi-view coverage that cooperative detection and fusion methods rely on.
+      </p>
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Cooperative RGB Views</h3>
+        <div class="vgrid vgrid--full">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" controls loop muted playsinline preload="none"
+                     poster="./static/videos/posters/cp_rgb_sidebyside.jpg">
+                <source data-src="./static/videos/cp_rgb_sidebyside.webm" type="video/webm">
+                <source data-src="./static/videos/cp_rgb_sidebyside.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Vehicle-Side &amp; Infrastructure-Side RGB</span>
+              <span class="vpanel-desc">Time-synchronized RGB of a shared city intersection: the vehicle-side camera (left) and the roadside infrastructure camera (right), with a UAV visible overhead.</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Per-Agent LiDAR</h3>
+        <div class="vgrid vgrid--pairs">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" controls loop muted playsinline preload="none"
+                     poster="./static/videos/posters/cp_lidar_vehicle.jpg">
+                <source data-src="./static/videos/cp_lidar_vehicle.webm" type="video/webm">
+                <source data-src="./static/videos/cp_lidar_vehicle.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Vehicle-Side LiDAR</span>
+              <span class="vpanel-desc">LiDAR point cloud from the vehicle-side agent's sensor.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <video class="vpanel-video" controls loop muted playsinline preload="none"
+                     poster="./static/videos/posters/cp_lidar_infra.jpg">
+                <source data-src="./static/videos/cp_lidar_infra.webm" type="video/webm">
+                <source data-src="./static/videos/cp_lidar_infra.mp4" type="video/mp4">
+              </video>
+              <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Infrastructure-Side LiDAR</span>
+              <span class="vpanel-desc">LiDAR point cloud from the roadside infrastructure agent's sensor.</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="vgroup">
+        <h3 class="vgroup-title">Per-Agent Sensor Streams</h3>
+        <div class="vgrid vgrid--mixed">
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <img class="vpanel-video" src="./static/images/cp_collage_vehicle_rgb.png"
+                   alt="Vehicle-side RGB camera frames sampled over the sequence.">
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Vehicle-Side RGB</span>
+              <span class="vpanel-desc">Vehicle-side RGB camera sampled across the sequence.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <img class="vpanel-video" src="./static/images/cp_collage_vehicle_lidar.png"
+                   alt="Vehicle-side LiDAR scans sampled over the sequence.">
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Vehicle-Side LiDAR</span>
+              <span class="vpanel-desc">Vehicle-side LiDAR scans sampled across the sequence.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <img class="vpanel-video" src="./static/images/cp_collage_infra_rgb.png"
+                   alt="Infrastructure-side RGB camera frames sampled over the sequence.">
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Infrastructure-Side RGB</span>
+              <span class="vpanel-desc">Infrastructure-side RGB camera sampled across the sequence.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="vpanel">
+            <div class="vpanel-media">
+              <img class="vpanel-video" src="./static/images/cp_collage_infra_lidar.png"
+                   alt="Infrastructure-side LiDAR scans sampled over the sequence.">
+            </div>
+            <figcaption class="vpanel-cap">
+              <span class="vpanel-title">Infrastructure-Side LiDAR</span>
+              <span class="vpanel-desc">Infrastructure-side LiDAR scans sampled across the sequence.</span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
