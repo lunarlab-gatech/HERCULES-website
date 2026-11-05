@@ -281,3 +281,28 @@
   max-width: 100%;
   height: auto;
 }
+
+/* ------------------------------------------------------------------ */
+/* "Coming soon" teaser (legged robots)                                */
+/* ------------------------------------------------------------------ */
+.coming-soon {
+  padding-top: 0.5rem;
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.3rem 0.9rem;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #b87333;
+  border-radius: 999px;
+}
+
+.coming-soon-grid {
+  max-width: 960px;
+}

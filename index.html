@@ -23,7 +23,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="./static/css/hercules.css?v=5">
+  <link rel="stylesheet" href="./static/css/hercules.css?v=6">
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -148,6 +148,37 @@
       <h2 class="subtitle has-text-centered">
         An open-source Unreal Engine 5 simulator for heterogeneous UAV–UGV teams in photorealistic, dynamic, large-scale environments.
       </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Coming soon: legged robots (Unitree Go2 quadruped + Unitree G1 humanoid). -->
+<section class="section coming-soon">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <span class="coming-soon-badge">Coming soon</span>
+        <h2 class="title is-3">Legged robots: Unitree Go2 quadruped + Unitree G1 humanoid</h2>
+        <p class="content">
+          The next <span class="hercules">HERCULES</span> release adds legged platforms to the UAV&ndash;UGV team: a Unitree Go2 quadruped and a Unitree G1 humanoid, driven by MuJoCo physics with reinforcement-learning locomotion policies and rendered in Unreal Engine with the full sensor suite (RGB, depth, instance segmentation, LiDAR, IMU, GPS) and ROS 2 wrappers. The preview below was captured in frame-exact lockstep: every side panel is that robot's own onboard sensor data at the same simulation tick as the cinematic view.
+        </p>
+      </div>
+    </div>
+    <div class="vgrid vgrid--single coming-soon-grid">
+      <figure class="vpanel">
+        <div class="vpanel-media">
+          <video class="vpanel-video" controls loop muted playsinline preload="none"
+                 poster="./static/videos/posters/go2_g1_walking_together.jpg">
+            <source data-src="./static/videos/go2_g1_walking_together.webm" type="video/webm">
+            <source data-src="./static/videos/go2_g1_walking_together.mp4" type="video/mp4">
+          </video>
+          <button class="vpanel-toggle" type="button" aria-label="Play video"><i class="fas fa-play"></i></button>
+        </div>
+        <figcaption class="vpanel-cap">
+          <span class="vpanel-title">Go2 + G1 walking together, onboard sensors live</span>
+          <span class="vpanel-desc">Front camera, depth, instance segmentation, 16-channel LiDAR, IMU, odometry and GPS for each robot, synchronized frame by frame with the cinematic camera in the Australian outback world.</span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
